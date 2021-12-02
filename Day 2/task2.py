@@ -6,7 +6,7 @@ for l in list2:
     list3=l.split()
     if list3[0]=="forward":
         forward+=int(list3[1])
-        depth=aim*forward
+        depth+=aim*forward
     elif list3[0]=="down":
         aim+=int(list3[1])
     else:
