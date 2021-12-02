@@ -1,0 +1,14 @@
+file = open("input.txt", "r")
+list = file.readlines()
+forward,depth=0,0
+list2 = [s.strip('\n') for s in list] 
+for l in list2:
+    list3=l.split()
+    if list3[0]=="forward":
+        forward+=int(list3[1])
+    elif list3[0]=="down":
+        depth+=int(list3[1])
+    else:
+        depth-=int(list3[1])
+    list3=[]
+print (forward*depth)
