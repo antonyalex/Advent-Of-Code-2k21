@@ -1,4 +1,4 @@
-with open("C:\\Users\\anton\\OneDrive\\Desktop\\input.txt") as f:
+with open("input.txt") as f:
     content = f.readlines()
 calls=[int(x) for x in content[0].strip().split(',')]
 cards = []
